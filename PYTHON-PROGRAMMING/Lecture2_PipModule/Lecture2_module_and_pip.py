@@ -1,0 +1,13 @@
+
+from typing import Union
+from fastapi import FastAPI
+from uvicorn  import run as app_run  # open fast api web
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return{"Hello":"World"}
+
+if __name__ == "__main__":
+    app_run(app, host='0.0.0.0', post=8080)
