@@ -1,7 +1,7 @@
 
 """
 Exercise - 2
-ATM Machine
+ATM Machine- Characteristics
 1. Pin Change
 2. Balance
 3. Withdraw
@@ -29,3 +29,8 @@ elif menu == "2":
     print("Balance Check")
 elif menu == "3":
     print("Withdraw")
+elif menu == "4":
+    print("Deposit")
+
+else:
+    print("Exit")
